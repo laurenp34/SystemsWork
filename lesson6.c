@@ -1,10 +1,10 @@
 int main() {
   char c = 1;
-  int i = 238;
+  int i = 50;
   long l = 1356;
 
   //The addresses are subsequent in hex
-  printf("%p %p %p\n", &c, &i, &l);
+  printf("%p %ld %p\n", &c, &i, &l);
 
   //create pointer objectds:
    char *ch; //ch = char pointer
@@ -27,7 +27,7 @@ int main() {
    char *toast;
    toast = &i;
 
-   printf("%p: %i\n", toast, *toast);
+   printf("%ld: %i\n", toast, *toast);
 
    //modify value using pointer
    i = *toast - 9;
